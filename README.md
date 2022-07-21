@@ -38,7 +38,7 @@ Folder structure:
         ├── chapter3
             ├── index.md
 
-When defining a book you can include a list of chapters in the book's frontmatter. Chapter names must match folder names in the chapters folder.
+When defining a book you can include a list of chapters in the book's front matter. Chapter names must match folder names in the chapters folder:
 ```
 ---
 title: 'Single-Cell Gene Expression Analysis'
@@ -51,7 +51,7 @@ chapters:
 ---
 ```
 
-***I recommend using the script for creating new books/chapters it will create folders and an boilerplate index.md file***
+***We recommend using the script for creating new books/chapters. Running the following script will create folders and an boilerplate index.md file.***
 To create a new book or chapter run following command:
 
 New book:
@@ -65,6 +65,7 @@ npm run new:chapter -- <chapter-use-dash-case>
 ```
 
 ### Chapters formatting and images
+
 See /public/chapters/boilerplate.md for documentation and examples.
 
 You can try the md editor to see results in real time.

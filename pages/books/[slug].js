@@ -23,15 +23,24 @@ export async function getStaticProps({ params: { slug } }) {
   const fileName = fs.readFileSync(`public/books/${slug}/index.md`, 'utf-8');
   const { data: frontmatter, content } = matter(fileName);
   
-  const chapters = (frontmatter.chapters || []).map(slug => {
-    const fileName = fs.readFileSync(`public/chapters/${slug}/index.md`, 'utf-8');
-    const { data: frontmatter, content } = matter(fileName);
-    return {
-      frontmatter,
-      content,
-      slug
-    }
-  })
+  const chapters = (frontmatter.chapters || [])
+    .map(slug => {
+      let fileName;
+
+      try {
+        fileName = fs.readFileSync(`public/chapters/${slug}/index.md`, 'utf-8');
+      } catch (err) {
+        return undefined;
+      }
+
+      const { data: frontmatter, content } = matter(fileName);
+      return {
+        frontmatter,
+        content,
+        slug
+      }
+    })
+    .filter(Boolean);
   
   return {
     props: {

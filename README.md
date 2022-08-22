@@ -4,6 +4,13 @@ Preview: https://nextjs-md-documentation.vercel.app/
 
 ## Getting Started
 
+Start by install Node.JS. On Mac, run:
+
+```
+brew install node
+npm install
+```
+
 First, run the development server:
 
 ```bash

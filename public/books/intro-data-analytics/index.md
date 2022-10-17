@@ -6,7 +6,8 @@ date: 'Summer 2022'
 public: true
 chapters:
     - 010-workflows
-    - 020-data-exploration
+    - 012-data-exploration
+    - 020-euclidean-distances-2d
 ---
 
 This is an accompany material for the xAIM masters course with a gentle introduction to exploratory data analysis, machine learning, and visual data analytics. Throughout the training, the students will learn how to accomplish various data mining tasks through visual programming and use [Orange](http://orangedatamining.com), our tool of choice for this course. If you have not already installed Orange, now would be a good time to visit its download page.

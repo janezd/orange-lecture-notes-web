@@ -52,8 +52,8 @@ export async function getStaticProps({ params: { slug } }) {
   };
 }
 
-const getTitleId = (title, index = '') => {
-  return index + '-' + title.replace(/\s/g, '-').toLowerCase();
+const getTitleId = (title) => {
+  return title.replace(/\s/g, '-').toLowerCase();
 }
 
 const Chapter = ({ frontmatter, content, index, slug }) => { 
@@ -63,7 +63,7 @@ const Chapter = ({ frontmatter, content, index, slug }) => {
     <div className='prose mx-auto mt-8 chapter'>
       <h2
         className='chapter-title'
-        id={getTitleId(frontmatter.title, index + 1)}>
+        id={getTitleId(frontmatter.title)}>
           Chapter {index + 1}: {frontmatter.title}
       </h2>
     <div dangerouslySetInnerHTML={{ __html: md({html: true}).render(parsedMd) }} />

@@ -75,7 +75,13 @@ function useOnScreen(ref) {
   return isIntersecting;
 }
 
-const Chapter = ({ frontmatter, content, index, slug, setIsChapterIndexVisible }) => {
+const Chapter = ({
+  frontmatter,
+  content,
+  index,
+  slug,
+  setIsChapterIndexVisible,
+}) => {
   let parsedMd = parseMd(content, `/chapters/${slug}`);
 
   const ref = React.useRef();
@@ -110,7 +116,7 @@ const ContentIndex = ({ chapters, isChapterIndexVisible }) => {
     const highestIndex = 0;
 
     Object.keys(isChapterIndexVisible).forEach((k) => {
-      if (isChapterIndexVisible[k] && k > highestIndex ) {
+      if (isChapterIndexVisible[k] && k > highestIndex) {
         highestIndex = k;
       }
     });
@@ -133,7 +139,7 @@ const ContentIndex = ({ chapters, isChapterIndexVisible }) => {
           <li key={index}>
             <Link href={'#' + getTitleId(frontmatter.title)}>
               <a className={highestVisibleIndex === index ? 'active' : ''}>
-                Chapter {index + 1}: {frontmatter.title}
+                {frontmatter.title}
               </a>
             </Link>
           </li>
@@ -174,7 +180,10 @@ export default function PostPage({ frontmatter, content, chapters, slug }) {
         />
       </div>
 
-      <ContentIndex chapters={chapters} isChapterIndexVisible={isChapterIndexVisible} />
+      <ContentIndex
+        chapters={chapters}
+        isChapterIndexVisible={isChapterIndexVisible}
+      />
 
       {chapters.map(({ frontmatter, content, slug }, index) => (
         <Chapter

@@ -91,7 +91,7 @@ const ContentIndex = ({ chapters }) => {
       <ul>
       {chapters.map(({frontmatter}, index) => (
         <li key={index}>
-          <Link href={'#' + getTitleId(frontmatter.title, index + 1)}>
+          <Link href={'#' + getTitleId(frontmatter.title)}>
             <a>Chapter {index + 1}: {frontmatter.title}</a>
           </Link>
         </li>

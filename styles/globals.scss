@@ -201,6 +201,13 @@ $max-size: 140;
         margin-right: 0;
         padding: 6px;
         transition: all .1s;
+        display: flex;
+        align-items: center;
+        
+        &.nav-logo {
+            top: 26px;
+            position: relative;
+        }
 
         + a {
             margin-left: 32px;

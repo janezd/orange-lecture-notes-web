@@ -132,7 +132,7 @@ const ContentIndex = ({ chapters, isChapterIndexVisible }) => {
         </button>
       </div>
 
-      <h2>Contents</h2>
+      <h2>Chapters</h2>
 
       <ul>
         {chapters.map(({ frontmatter }, index) => (

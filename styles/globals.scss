@@ -201,6 +201,13 @@ $max-size: 140;
         margin-right: 0;
         padding: 6px;
         transition: all .1s;
+        display: flex;
+        align-items: center;
+        
+        &.nav-logo {
+            top: 26px;
+            position: relative;
+        }
 
         + a {
             margin-left: 32px;
@@ -257,7 +264,7 @@ $max-size: 140;
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(2px);
     transition: all 2s;
-    opacity: 0.2;
+    opacity: 0.75;
     
     .toolbar {
         opacity: 0.2;
@@ -269,14 +276,25 @@ $max-size: 140;
 
     h2 {
         margin-top: 12px;
-        font-weight: 300;
+        font-weight: 400;
+        opacity: 0.2;
+        transition: all 2s;
     }
 
     a {
         font-weight: 300;
         text-decoration: none;
+        opacity: 0.45;
+        transition: all 0.3s;
+        display: block;
 
+        &.active {
+            animation: animate-scale 0.6s;
+            opacity: 1;
+        }
+        
         &:hover {
+            opacity: 1;
             text-decoration: underline;
         }
     }
@@ -304,6 +322,11 @@ $max-size: 140;
             transition: opacity .3s;
             opacity: .7;
         }
+
+        h2 {
+            transition: all .3s;
+            opacity: 0.7;
+        }
     }
 
     &.small {
@@ -321,4 +344,10 @@ $max-size: 140;
             opacity: 1;
         }
     }
+}
+
+@keyframes animate-scale {
+    0% {transform: scale(1);}
+    33% {transform: scale(1.04);}
+    100% {transform: scale(1);}
 }

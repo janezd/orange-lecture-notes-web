@@ -1,5 +1,5 @@
 ---
-title: Euclidean Distance in 2D
+title: Distances in 2D
 date: 'October 2022'
 ---
 Clustering, that is, the detection of groups of objects, is one of the basic procedures we use to analyze data. We can, for instance, discover groups of people according to their user profiles through service usage, shopping baskets, behavior patterns, social network contacts, usage of medicines, or hospital visits. Or cluster products based on their weekly purchases. Or genes based on their expression. Or doctors based on their prescription.

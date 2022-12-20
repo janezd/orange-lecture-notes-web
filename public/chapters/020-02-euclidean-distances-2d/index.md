@@ -11,12 +11,12 @@ We will use the data on student grades. The data is available through Orange’s
 ![](grades-dataset.png)
 
 
-We would like to find students whose grades are similar. A teacher, for instance, may be interested to know if she has students talented in different areas so that she can adjust their training load appropriately. While, for this task, we would need to consider all the grades, we will simplify this introduction to consider only grades from English and Algebra, constructing, in this way, a two-dimensional data set.
+We would like to find students whose grades are similar. Teachers, for instance, may be interested to know if they have students talented in different areas so that she can adjust their training load appropriately. While, for this task, we would need to consider all the grades, we will simplify this introduction to consider only grades from English and Algebra, constructing, in this way, a two-dimensional data set.
 
 To select only specific variables from the data, we can use the [Select Columns](https://orangedatamining.com/widget-catalog/data/selectcolumns) widget. We will ignore all features except English and Algebra. We can do this by selecting all the features, moving them to the Ignored column, and then dragging English and Algebra back to the Features column. It is allways good to check the results in the Data Table.
 
 <!!! float-aside !!!>
-We here selected English and Algebra for no particular reason. You can repreat and try evertyhing from this lesson with some other selection of feature pair.
+Here, we selected English and Algebra for no particular reason. You can repeat and try everything from this lesson with some other selection of feature pairs.
 
 ![](select-columns.png)
 
@@ -31,7 +31,7 @@ We can see Olga with a high math grade on the top left and Maya in the opposite 
 
 There should be a way to formally measure the distances. In real life, we would just use a ruler and, for instance, measure the distance between Katherine and Jena by measuring the length of the line that connects them. But since Orange is a computer program, we need to tell it how to compute the distances. Well, Katherine’s grade in English is 20, and Jena’s is 39. Their English grade difference is 19. Katherine scored 71 in Algebra and Jena’s 99. The algebra grade difference is 28. According to Pythagoras, the distance between Katherine and Jena should be a square root of 19 squared plus 28 squared, which amounts to about 33.8. 
 
-We could compute distances between every pair of students in this way. But Orange can do this for us.
+We could compute distances between every pair of students this way. But we needn't do it by hand, Orange can do this for us.
 
 We will use the Distances widget and, for now, remove normalization. The grades in English and Math are expressed in the same units, so there is no need for normalization now. We’ll keep the distance matrix set to Euclidean distance, as this is exactly the one as we have defined for Katherine and Jena.
 

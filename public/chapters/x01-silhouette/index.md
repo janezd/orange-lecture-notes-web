@@ -5,12 +5,12 @@ date: 'October 2022'
 Consider a two-feature data set which we have painted in the [Paint Data](https://orangedatamining.com/widget-catalog/data/paintdata/) widget. 
 
 <!!! float-aside !!!>
-Don't get confused: we paint data and/or visualize it with Scatter Plot, which show only two features. This is just for an illustration! Most data sets contain many features and methods like k-Means clustering take into account all features, not just two.
+Don't get confused: we paint data and/or visualize it with Scatter Plot, which shows only two features. This is just for illustration! Most data sets contain many features, and methods like k-Means clustering take into account all features, not just two.
 ![](paint-and-kmeans.png)
 
 ![](paint.png)
 
-We send the painted data to the k-means clustering, tell it to find three clusters, and display the clustering in the scatter plot.
+We send the painted data to the k-means clustering, tell it to find three clusters, and display the clustering in the Scatter Plot.
 
 ![](scatterplot.png)
 
@@ -18,7 +18,7 @@ We send the painted data to the k-means clustering, tell it to find three cluste
 ![](silhouette-a.png)
 Distances to compute average distance A for selected point.
 
-The data points in the red cluster are well separated from points in the other two clusters. Not so for the green and blue points, where several points are on the border between the clusters. We would like to quantify the degree of how well a data point belongs to the cluster to which it is assigned.
+The data points in the red cluster are nicely separated from points in the other two clusters. Not so for the green and blue points, where several points are on the border between the clusters. We would like to quantify the degree of how well a data point belongs to the cluster to which it is assigned.
 
 
 We will invent a scoring measure for this and we will call it a silhouette (because this is how it's called). Our goal: a silhouette of 1 (one) will mean that the data instance is well rooted in the cluster, while the score of 0 (zero) will be assigned to data instances on the border between two clusters.

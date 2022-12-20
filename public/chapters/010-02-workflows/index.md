@@ -26,7 +26,7 @@ If you are using Orange for the first time, the Datasets widget did not load any
 
 ![](datasets-table-empty.png)
 
-With the dashed connection, Orange tells us that the widgets are connected, but no information is transmitted through the channel. Namely, we have yet to tell the Datasets widget which data to load. Let us double-click the Datasets widget to get its content. The widget displays the list of available data sets. Find HDI, the human development index dataset, and load the data by double-clicking on its row or pressing a return key when the row is selected.
+With the dashed connection, Orange tells us that the widgets are connected, but no information is transmitted through the channel. Namely, we have yet to tell the Datasets widget which data to load. Let us double-click the Datasets widget to get its content. The widget displays the list of available data sets. Find HDI, the Human Development Index dataset, and load the data by double-clicking on its row or pressing the return key when the row is selected.
 
 ![](datasets-hdi.png)
 
@@ -43,7 +43,7 @@ The first few features in the HDI dataset report on life expectancy, mean years 
 
 ![](scatterplot.png)
 
-Life expectancy seems to be related to years spent in school. The longer we go to school, the longer we live? Well, not necessary. Causality and correlation should not be mixed. It would still be interesting to see which countries have the most elaborate school system and where you live long. At this stage, we can
+Life expectancy seems to be related to years spent in school. The longer we go to school, the longer we live? Well, not necessarily. Causality and correlation should not be mixed. It would still be interesting to see which countries have the most elaborate school systems and where people live longest. At this stage, we can
 
 * hoover over the data point to find which country it represents,
 * switch on the data point labeling by selecting country from the Label pull-down menu,
@@ -57,15 +57,15 @@ A resulting workflow now contains four widgets. The widget Datasets loads the da
 
 ![](scatterplot-selection-workflow.png)
 
-Why is the connection between the Scatter Plot and the downstream Data Table dashed? Oh, we did not select any data in Scatter Plot yet. Let us do this and have both Scatter Plot and Data Table (1) open, side by side.
+Why is the connection between the Scatter Plot and the downstream Data Table dashed? Oh, we still haven't connected the two widgets! Let's do this while observing Scatter Plot and Data Table (1) side by side.
 
 <!!! width-max !!!>
 ![](explore-scatterplot.png)
 
-Few remarks are in place here:
+Some remarks are necessary here:
 
 * Selecting the points in the Scatter Plot, the dashed connection between the Scatter Plot and Data Table (1) widget icons becomes full. The Scatter Plot has loaded the data on this connection. Try single-clicking on the empty part of the scatterplot to remove any selection, empty the data on the output channel, and then select some data again.
-* In the screenshot above, we have hidden the control part of the widget. You can always show it back by clicking on an arrow on the left edge of the widget's window.
+* In the screenshot above, we have hidden the control area of the widget. You can always show it back by clicking on an arrow on the left edge of the widget's window.
 * Any change in the selection of the Scatter Plot points propagates through the workflow and updates the display in the Data Table (1). This mechanism is excellent: we have just constructed our first combination of widgets for exploratory analysis. Use it to find the countries with the lowest lifespan. Or the country in the upper left quadrant of the scatter plot display looks like an outlier? Do you think countries in each group belong to some geographical regions?
 * Every time we click on Orange's canvas, the canvas window comes up front and hides the widgets. We can bring the windows of the opened widgets to the front by choosing Bring Widgets to Front command from the View menu. Or, from the same menu, choose always to display widgets on the top.
 

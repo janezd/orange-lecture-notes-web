@@ -4,7 +4,7 @@ date: 'July 2022'
 comment: 'Uses HDI data set to show few more visualizations and tricks in exploratory data analysis'
 ---
 
-Let us continue with our human development index (HDI) data set to meet a few more visualizations. We start with distributions and add the [Distributions](https://orangedatamining.com/widget-catalog/visualize/distributions/) widget to the Datasets. 
+Let's get familiar with more visualisations by further exploring the Human Development Index (HDI). We start with distributions and add the [Distributions](https://orangedatamining.com/widget-catalog/visualize/distributions/) widget to the Datasets. 
 
 <!!! float-aside !!!>
 Load the HDI data in the Datasets widget. See the previous chapter for the details.
@@ -18,7 +18,7 @@ Distributions display a histogram of values of selected features. For example, t
 
 ![](distributions-life-expect.png)
 
-Here, it is worthwhile to go through other features of interest and check their distribution. We continue our example with the distribution of the human development index, which looks almost uniform and select data where this index is high in the distribution widget. We perform this selection by clicking and dragging through the histogram bars. For a start, let us check the output of the Distribution widget in the Data Table:
+Here, it is worthwhile to go through other features of interest and check their distribution. We continue our example with the distribution of the Human Development Index, which looks almost uniform and select data where this index is high in the distribution widget. We perform this selection by clicking and dragging through the histogram bars. For a start, let us check the output of the Distribution widget in the Data Table: 
 
 <!!! width-max !!!>
 ![](distributions-hdi.png)
@@ -27,12 +27,12 @@ Again, notice that any data selection changes in the Distributions widget propag
 
 ![](distributions-scatter.png)
 
-We aim to see where the countries with high or low human development index, whatever we selected in the Distributions widget, in the visualization displayed in the Scatter Plot. For instance, most of the countries with high development index have a developed education system and high life expectancy:
+We aim to see where the countries with high or low human development index (whatever we selected in the Distributions widget) are displayed in the Scatter Plot. For instance, most of the countries with high development index have a developed education system and high life expectancy:
 
 <!!! width-max !!!>
 ![](high-hdi-in-scatter.png)
 
-Most countries with a high human development index are in the upper quadrant of the life expectancy-schooling plot, though not entirely. There is, however, some overlap. For instance, some countries with high mean years of schooling have a low human development index. It would be interesting to compare the distributions of years of schooling for countries with low and countries with high development index. We can do this, and here is the trick: we will construct the workflow with two Distributions widgets. In the first one, we will select the countries with high development index, and push the information about this selection, together with the data, to the second Distributions widget. To start with, here is the workflow:
+Most countries with a high human development index are in the upper quadrant of the life expectancy-schooling plot, though not entirely. There is, however, some overlap. For instance, some countries with high mean years of schooling have a low human development index. It would be interesting to compare the distributions of years of schooling for countries with low and countries with high development index. We can do this, and here is the trick: we will construct the workflow with two Distributions widgets. In the first one, we will select the countries with a high development index, and push the information about this selection, together with the data, to the second Distributions widget. To start with, here is the workflow:
 
 ![](two-distributions.png)
 

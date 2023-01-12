@@ -3,7 +3,7 @@ title: 'xAIM Moodle'
 subTitle: 'The accompanying material for the masters course in Explainable artificial intelligence in healthcare management (xAIM)'
 coverImg: 'xaim-logo.png'
 date: '2022'
-public: false
+public: true
 chapters:
     - xaim-where-is-moodle
     - xaim-login-xaim

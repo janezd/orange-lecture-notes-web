@@ -13,3 +13,4 @@ If your sign-in was successful, you will have to provide a new password.
 If successful, you will now be able to sign into your account using your username and the new password. 
 
 On the off-chance that you are interrupted during the password-changing process, start the process again, using the system-generated password to re-enter the moodle password-changing platform. 
+

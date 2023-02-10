@@ -24,5 +24,4 @@ We can reproduce our manual analysis with a computer. We will use Orange, a data
 
 Let's load our small dataset into Orange. I will use the File widget and load the data from the Desktop file we have created. The time and event columns must be marked as meta-features. Orange did so automatically. We can inspect the data in the Data Table. Then we have to inform Orange, which are the time and event columns, so that it knows it's dealing with survival data. We do this with the As Survival Data widget. Now we have to connect the output from As Survival Data to the Kaplan-Meier widget. On the left of the Kaplan-Meier widget, we can choose to display the median, confidence intervals, and censored data. We have successfully reproduced the previous plot in Orange.
 
-
-
+![](02-km-plot-orange.png)

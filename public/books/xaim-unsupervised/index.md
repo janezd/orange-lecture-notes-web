@@ -1,23 +1,21 @@
 ---
-title: 'xAIM: Introduction to Data Science'
-subTitle: 'The accompanying material for the masters course in Explainable artificial intelligence in healthcare management (xAIM)'
+title: 'Introduction to Data Science. '
+subTitle: 'Part 2: Unsupervised Data Analysis'
 coverImg: 'xaim-logo.png'
 date: '2022'
 public: true
 chapters:
-    - 010-02-workflows
-    - 010-04-saving-your-work
-    - 010-06-correlations
-    - 010-08-data-distributions
-
-    - 020-02-euclidean-distances-2d
-    - 020-04-cluster-distances
-    - 020-06-dendrograms
+    - unsupervised/010-euclidean-distances-2d
+    - unsupervised/020-cluster-distances
+    - unsupervised/030-dendrograms
+    - unsupervised/040-clustering-higher-dim
+    - unsupervised/050-clustering-geo-maps
+    - unsupervised/060-explaining-clusters
 ---
 
 This is accompanying material for the xAIM master's course with a gentle introduction to exploratory data analysis, machine learning, and visual data analytics. Throughout the training, the students will learn to accomplish various data mining tasks through visual programming and use [Orange](http://orangedatamining.com), our tool of choice for this course. If you have not already installed Orange, now would be a good time to visit its download page.
 
-These course notes were prepared Blaž Zupan, Janez Demšar, and Ajda Pretnar Žagar, with help from the members of the [Bioinformatics Lab](http://biolab.si) at [University of Ljubljana](http://www.uni-lj.si), Slovenia.
+These course notes was prepared by Blaž Zupan, based on the older textbook designed in collaboration with Janez Demšar and Ajda Pretnar. Thanks for all the help from the members of the [Bioinformatics Lab](http://biolab.si) at [University of Ljubljana](http://www.uni-lj.si), Slovenia.
 
 The material is offered under Create Commons [CC BY-NC-ND licence](https://creativecommons.org/licenses/by-nc-nd/4.0/).
 

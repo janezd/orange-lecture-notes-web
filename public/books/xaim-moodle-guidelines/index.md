@@ -5,14 +5,14 @@ coverImg: 'xaim-logo.png'
 date: '2022'
 public: true
 chapters:
-    - xaim-where-is-moodle
-    - xaim-login-xaim
-    - xaim-editing-material
-    - xaim-adding-material
-    - xaim-adding-files
-    - xaim-adding-links-to textural
-    - xaim-student-communication
-    - xaim-quiz-and-question-bank
+    - xaim-help/xaim-where-is-moodle
+    - xaim-help/xaim-login-xaim
+    - xaim-help/xaim-editing-material
+    - xaim-help/xaim-adding-material
+    - xaim-help/xaim-adding-files
+    - xaim-help/xaim-adding-links-to textural
+    - xaim-help/xaim-student-communication
+    - xaim-help/xaim-quiz-and-question-bank
 ---
 
 Welcome to the [xAIM](https://xaim.eu/) [Moodle](http://xaim.biolab.si) user manual. The manual is intended to help teachers, teaching assistants, and other xAIM staff get familiar with Moodle - the chosen e-learning platform. 

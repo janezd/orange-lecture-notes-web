@@ -3,7 +3,7 @@ title: 'Tutorial on Survival Analaysis'
 subTitle: 'The accompanying material for the course on survival analysis using visual analytics'
 coverImg: 'sa-edu-logo.png'
 date: '2023'
-public: true
+public: false
 chapters:
     - sa-01-the-data
     - sa-02-survival-curve

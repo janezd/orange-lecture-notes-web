@@ -1,20 +1,11 @@
 ---
 title: 'Data Mining @ BCM'
-subTitle: 'Part 1: Workflows, Exploratory Data Analysis, Hierarchical Clustering'
+subTitle: 'Part 2: Cluster Explanation, Silhouettes, k-Means Clustering'
 coverImg: 'logo-bcm.png'
 date: '2023'
 public: false
 chapters:
-    - ds-intro/010-workflows
-    - ds-intro/020-saving-your-work
-    - ds-intro/030-correlations
-    - ds-intro/040-data-distributions
-    - ds-intro/050-data-construction
-    - ds-unsupervised/010-euclidean-distances-2d
-    - ds-unsupervised/020-cluster-distances
-    - ds-unsupervised/030-dendrograms
-    - ds-unsupervised/040-clustering-higher-dim
-    - bcm-homeworks/data
+    - ds-unsupervised/050-clustering-geo-maps
 
 ---
 

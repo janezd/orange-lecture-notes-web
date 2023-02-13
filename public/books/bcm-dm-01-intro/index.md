@@ -1,8 +1,8 @@
 ---
 title: 'Data Mining @ BCM'
 subTitle: 'Part 1: Workflows, Exploratory Data Analysis, Hierarchical Clustering'
-coverImg: 'xaim-logo.png'
-date: '2022'
+coverImg: 'logo.png'
+date: '2023'
 public: false
 chapters:
     - ds-intro/010-workflows

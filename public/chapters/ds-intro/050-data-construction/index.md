@@ -9,6 +9,9 @@ But what if I wanted to use some of my own data? As it turns out, Orange can rea
 
 ![](excel.png)
 
+<!!! float-aside !!!>
+Alternatively from adding a File widget, try dragging the spreadsheet document to Orange's canvas.
+
 Not that this data makes much sense; it is just an example of how to prepare a tabulated data set for any machine learning. We will store the data set I have just created to the desktop in a file, say, fitness.xlsx. Now, we can open Orange, and place a File widget on Orange canvas. Like with other widgets, we used a right click to find this particular widget. Orange comes with some preloaded data sets that I can access from this widget, but right now we are interested in our fitness data. So we can click on the three dots button and find our Excel file. The File widget reports on the data columns, and shows the names of the features.
 
 ![](file.png)
@@ -22,12 +25,16 @@ Now back to our dataset. The first thing to do after loading the data is to chec
 
 ![](select-columns.png)
 
-The [Select Columns]() widget is a great widget to manually edit the data domain and play with including and excluding features. We will use it from time to time in our next videos. Moving on we would now like to save my edited data set. 
- 
-This can be easily done with the [Save Data] widget: we just click Save As, choose to save our data in, say, an Excel file, and rename the file to fitness-no-eyes, as creepy as it sounds. This file can also just go on our desktop for now.Taking a look at the file I can double-click it to view it in Excel. 
+The [Select Columns](https://orangedatamining.com/widget-catalog/transform/selectcolumns/) widget is a great widget to manually edit the data domain and play with including and excluding features. We will use it from time to time in our next videos. Moving on we would now like to save my edited data set. 
+
+<!!! float-aside !!!>
+![](save-data-workflow.png)
+
+
+This can be easily done with the [Save Data](https://orangedatamining.com/widget-catalog/data/save/) widget: we just click Save As, choose to save our data in, say, an Excel file, and rename the file to fitness-no-eyes, as creepy as it sounds. This file can also just go on our desktop for now.Taking a look at the file I can double-click it to view it in Excel. 
 
 ![](excel-no-eyes.png)
 
-Notice that apart from the feature names, Orange also stored some data on the feature types in the second and third rows. Saving of this extra info can be toggled on or off in the Save File widget.
+Notice that apart from the feature names, Orange also stored some data on the feature types in the second and third rows. Saving of this extra info can be toggled on or off in the Save Data widget.
  
 Now we know how to prepare some of our own data for Orange. And we also know how to export data from Orange. Note, again, that every time we prepare our own data sets, it is just good practice to first check it out in Data Table. In our running example, we used Excel, but Orange also loads tab or comma separated data sets as well as data sets in a bunch of other formats.

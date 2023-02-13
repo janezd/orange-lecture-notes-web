@@ -3,7 +3,7 @@ title: 'Introduction to Data Science. '
 subTitle: 'Part 2: Unsupervised Data Analysis'
 coverImg: 'xaim-logo.png'
 date: '2022'
-public: true
+public: false
 chapters:
     - ds-unsupervised/010-euclidean-distances-2d
     - ds-unsupervised/020-cluster-distances

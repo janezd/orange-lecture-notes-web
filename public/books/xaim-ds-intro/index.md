@@ -3,7 +3,7 @@ title: 'Introduction to Data Science. '
 subTitle: 'Part 1: Data Analysis Workflows'
 coverImg: 'xaim-logo.png'
 date: '2022'
-public: true
+public: false
 chapters:
     - ds-intro/010-workflows
     - ds-intro/020-saving-your-work

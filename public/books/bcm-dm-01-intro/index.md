@@ -15,6 +15,7 @@ chapters:
     - ds-unsupervised/030-dendrograms
     - ds-unsupervised/040-clustering-higher-dim
     - ds-unsupervised/050-clustering-geo-maps
+    - bcm-homeworks/data
 
 ---
 

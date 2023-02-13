@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial on Survival Analaysis'
 subTitle: 'The accompanying material for the course on survival analysis using visual analytics'
-coverImg: 'sa-edu-logo.png'
+coverImg: 'owkaplanmeier.svg'
 date: '2023'
 public: false
 chapters:

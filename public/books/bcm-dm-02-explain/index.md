@@ -6,7 +6,11 @@ date: '2023'
 public: false
 chapters:
     - ds-unsupervised/050-clustering-geo-maps
-
+    - ds-unsupervised/060-explaining-clusters
+    - ds-unsupervised/070-silhouette
+    - ds-unsupervised/080-kmeans
+    - ds-unsupervised/085-kmeans-zoo
+    - bcm-homeworks/clustering
 ---
 
 This textbook is a part of the accompanying material for the Baylor College of Medicine's Data Mining course with a gentle introduction to exploratory data analysis, machine learning, and visual data analytics. Throughout the training, you will learn to accomplish various data mining tasks through visual programming and use [Orange](http://orangedatamining.com), our tool of choice for this course. 

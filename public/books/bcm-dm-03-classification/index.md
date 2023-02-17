@@ -1,16 +1,16 @@
 ---
 title: 'Data Mining @ BCM'
-subTitle: 'Part 2: Cluster Explanation, Silhouettes, k-Means Clustering'
+subTitle: 'Part 3: Classification'
 coverImg: 'logo-bcm.png'
 date: 'February 2023'
 public: false
 chapters:
-    - ds-unsupervised/050-clustering-geo-maps
-    - ds-unsupervised/060-explaining-clusters
-    - ds-unsupervised/070-silhouette
-    - ds-unsupervised/080-kmeans
-    - ds-unsupervised/085-kmeans-zoo
-    - bcm-homeworks/clustering
+    - ds-classification/010-classification
+    - ds-classification/020-trees
+    - ds-classification/030-accuracy
+    - ds-classification/040-cheating
+    - ds-classification/050-cross-validation
+    - bcm-homeworks/accuracy
 ---
 
 This textbook is a part of the accompanying material for the Baylor College of Medicine's Data Mining course with a gentle introduction to exploratory data analysis, machine learning, and visual data analytics. Throughout the training, you will learn to accomplish various data mining tasks through visual programming and use [Orange](http://orangedatamining.com), our tool of choice for this course. 

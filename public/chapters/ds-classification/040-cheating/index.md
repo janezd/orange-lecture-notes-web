@@ -6,8 +6,6 @@ date: 'February 2022'
 <!!! float-aside !!!>
 This lesson has a strange title and it is not obvious why it was chosen. Maybe you, the reader, should tell us what this lesson has to do with cheating.
 
-![](workflow-randomize.png)
-
 At this stage, the classification tree on the Iris flower data set looks very good. There are only three data instances where the tree makes a mistake. Can we mess up the data set so bad that the trees will ultimately fail? Like, remove any existing correlation between features and the class? We can! There's the [Randomize](https://orangedatamining.com/widget-catalog/transform/randomize/) widget with class shuffling. Check out the chaos it creates in the Scatter Plot visualization where there were nice clusters before randomization, and where now, of course, the classes have been messed up.
 
 <!!! float-aside !!!>
@@ -21,7 +19,7 @@ Fine. There can be no classifier that can model this mess, right? Let us check o
 
 And the result? Here is a screenshot of the Distributions widget.
 
-![](distributions.png)
+![](overfit-distributions.png)
 
 Most unusual. Despite shuffling all the classes, which destroyed any connection between features and the class variable, about 80\% of predictions were still correct.
 

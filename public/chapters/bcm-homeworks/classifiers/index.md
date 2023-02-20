@@ -11,7 +11,7 @@ Consider the following classifiers:
 
 2. classification tree of with depth of 3
 
-3. logistic regression
+3. logistic regression (do not use regularization, set regularization type to None)
 
 4. random forest with ten trees
 

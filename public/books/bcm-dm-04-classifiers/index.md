@@ -1,6 +1,6 @@
 ---
 title: 'Data Mining @ BCM'
-subTitle: 'Part 3: Classifiers'
+subTitle: 'Part 4: Classifiers'
 coverImg: 'logo-bcm.png'
 date: 'February 2023'
 public: false

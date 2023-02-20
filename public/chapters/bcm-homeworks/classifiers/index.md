@@ -7,7 +7,7 @@ date: 'February 2022'
 
 Consider the following classifiers:
 
-1. classification tree of with a depth of 1 (so-called a "stump", set the parameter of the tree learner "Limit the depth to" to 1)
+1. classification tree of with a depth of 1 (so-called a "stump", set the parameter of the tree learner "Limit the maximal tree depth to" to 1)
 
 2. classification tree of with depth of 3
 

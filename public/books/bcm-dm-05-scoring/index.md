@@ -1,6 +1,6 @@
 ---
 title: 'Data Mining @ BCM'
-subTitle: 'Part 4: Feature Subset Selection, Scoring of Classifiers'
+subTitle: 'Part 5: Feature Subset Selection, Scoring of Classifiers'
 coverImg: 'logo-bcm.png'
 date: 'February 2023'
 public: false

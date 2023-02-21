@@ -1,16 +1,17 @@
 ---
 title: 'Data Mining @ BCM'
-subTitle: 'Part 4: Classifiers'
+subTitle: 'Part 4: Feature Subset Selection, Scoring of Classifiers'
 coverImg: 'logo-bcm.png'
 date: 'February 2023'
 public: false
 chapters:
-    - ds-classification/100-logreg
-    - ds-classification/110-random-forest
-    - ds-classification/120-svm
-    - ds-classification/130-knn
-    - ds-classification/140-naive-bayes
-    - bcm-homeworks/classifiers
+    - ds-classification/200-fss
+    - ds-classification/210-fss-cheating
+    - ds-classification/220-fss-random
+    - ds-classification/230-fss-evaluation
+    - ds-classification/300-scoring
+    - ds-classification/310-decisions
+    - bcm-homeworks/roc
 ---
 
 This textbook is a part of the accompanying material for the Baylor College of Medicine's Data Mining course with a gentle introduction to exploratory data analysis, machine learning, and visual data analytics. Throughout the training, you will learn to accomplish various data mining tasks through visual programming and use [Orange](http://orangedatamining.com), our tool of choice for this course. 

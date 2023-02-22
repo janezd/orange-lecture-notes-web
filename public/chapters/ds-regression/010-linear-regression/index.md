@@ -3,8 +3,6 @@ title: 'Linear Regression'
 date: 'February 2022'
 ---
 
-\marginnote{In the \widget{Paint Data} widget, remove the C2 label from the list. If you have accidentally left it while painting, don't despair. The class variable will appear in the \widget{Select Columns} widget, but you can "remove" it by dragging it into the Available Variables list.} 
-
 For a start, let us construct a very simple data set. It will contain just one continuous input feature (let's call it x) and a continuous class (let's call it y). We will use Paint Data, and then reassign one of the features to be a class using Select Columns widget, moving the feature y from "Features" to "Target Variable". It is always good to check the results, so we are including Data Table and Scatter Plot in the workflow at this stage. We will be modest this time and only paint 10 points and use Put instead of the Brush tool.
 
 ![](paint.png)

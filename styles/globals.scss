@@ -95,6 +95,10 @@ $max-size: 140;
         margin: 10px 0;
         font-weight: 300;
     }
+
+    [aria-hidden="true"] {
+        display: none;
+    }
 }
 
 /*

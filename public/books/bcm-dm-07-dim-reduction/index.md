@@ -12,6 +12,7 @@ chapters:
     - ds-unsupervised/120-explaining-pca
     - ds-unsupervised/130-mds
     - ds-unsupervised/140-tsne
+    - bcm-homeworks/regression
 ---
 
 This textbook is a part of the accompanying material for the Baylor College of Medicine's Data Mining course with a gentle introduction to exploratory data analysis, machine learning, and visual data analytics. Throughout the training, you will learn to accomplish various data mining tasks through visual programming and use [Orange](http://orangedatamining.com), our tool of choice for this course. 

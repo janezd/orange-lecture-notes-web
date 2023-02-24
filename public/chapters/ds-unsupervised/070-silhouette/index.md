@@ -22,7 +22,7 @@ For a given data point (say, the blue point in the image on the left), we can me
 
 On the other hand, we would like a data point to be far away from the points in the closest neighboring cluster. The closest cluster to our blue data point is the red cluster. We can measure the distances between the blue data point and all the points in the red cluster and again compute the average. Let us denote this average distance as B. The larger the B, the better.
 
-The point is well rooted within its cluster if the distance to the points from the neighboring cluster (B) is much larger than the distance to the points from its cluster (A). Hence we compute B-A. We normalize it by dividing it with the larger of these two numbers, S = (B -A) / max\{A, B}. Voilá, S is our silhouette score.
+The point is well rooted within its cluster if the distance to the points from the neighboring cluster (B) is much larger than the distance to the points from its cluster (A). Hence we compute B-A. We normalize it by dividing it with the larger of these two numbers, $S = (B -A) / \max \{A,B\}$ . Voilá, S is our silhouette score.
 
 <!!! float-aside !!!>
 <p>

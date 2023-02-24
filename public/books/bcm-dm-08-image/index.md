@@ -6,6 +6,8 @@ date: 'February 2023'
 public: false
 chapters:
     - ds-unsupervised/140-tsne
+    - ds-unsupervised/150-tsne-mds-pca
+    - ds-images/010-embedding
     - bcm-homeworks/images
 ---
 

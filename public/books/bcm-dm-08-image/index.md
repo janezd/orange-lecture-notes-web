@@ -1,17 +1,12 @@
 ---
 title: 'Data Mining @ BCM'
-subTitle: 'Part 7: Regression (continued) and Dimensionality Reduction'
+subTitle: 'Part 8: t-SNE, Image Analytics'
 coverImg: 'logo-bcm.png'
 date: 'February 2023'
 public: false
 chapters:
-    - ds-regression/050-analysis
-    - ds-regression/060-l1-l2
-    - ds-unsupervised/100-pca
-    - ds-unsupervised/110-pca-details
-    - ds-unsupervised/120-explaining-pca
-    - ds-unsupervised/130-mds
-    - bcm-homeworks/regression
+    - ds-unsupervised/140-tsne
+    - bcm-homeworks/images
 ---
 
 This textbook is a part of the accompanying material for the Baylor College of Medicine's Data Mining course with a gentle introduction to exploratory data analysis, machine learning, and visual data analytics. Throughout the training, you will learn to accomplish various data mining tasks through visual programming and use [Orange](http://orangedatamining.com), our tool of choice for this course. 

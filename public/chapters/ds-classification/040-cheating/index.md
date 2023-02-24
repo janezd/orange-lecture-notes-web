@@ -23,11 +23,11 @@ And the result? Here is a screenshot of the Distributions widget.
 
 Most unusual. Despite shuffling all the classes, which destroyed any connection between features and the class variable, about 80\% of predictions were still correct.
 
-Can we further improve accuracy on the shuffled data? Let us try to change some properties of the induced trees: in the \widget{Tree} widget, disable all early stopping criteria.
+Can we further improve accuracy on the shuffled data? Let us try to change some properties of the induced trees: in the \widget\{Tree} widget, disable all early stopping criteria.
 
 ![](early-stopping.png)
 
-Wow, almost no mistakes now, the accuracy of predictions is nearly 99%. How is this possible? On a class-randomized data set? To find the answer to this riddle, open the \widget{Tree Viewer} and check out the tree. How many nodes does it have? Are there many data instances in the leaf nodes?
+Wow, almost no mistakes now, the accuracy of predictions is nearly 99%. How is this possible? On a class-randomized data set? To find the answer to this riddle, open the \widget\{Tree Viewer} and check out the tree. How many nodes does it have? Are there many data instances in the leaf nodes?
 
 ![](overfitted-tree.png)
 

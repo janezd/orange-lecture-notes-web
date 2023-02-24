@@ -34,7 +34,7 @@ On the other hand, we would like a data point to be far away from the points in 
 
 The point is well rooted within its own cluster if the distance to the points from the neighboring cluster (B) is much larger than the distance to the points from its own cluster (A), hence we compute B-A. We normalize it by dividing it with the larger of these two numbers, 
 
-S = (B -A) / max{A, B}. 
+$S = (B -A) / \max \{A,B\}$
 
 Voilá, S is our silhouette score for the selected data point. Note that we can compute it for each data point in our data set.
 

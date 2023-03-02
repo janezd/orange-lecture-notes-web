@@ -5,10 +5,10 @@ import Link from "next/link";
 import { isAllowedPath } from "../utils/helpers";
 
 export async function getStaticProps() {
-  const booksPath = path.join("public", "books" + path.sep);
+  const booksPath = path.join("public", "books");
 
   const posts = fs
-    .readdirSync(booksPath)
+    .readdirSync(path.join(booksPath, path.sep))
     .filter(isAllowedPath)
     .filter((slug) => fs.existsSync(path.join(booksPath, slug, "index.md")))
     .map((slug) => {

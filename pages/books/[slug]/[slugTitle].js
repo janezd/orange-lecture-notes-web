@@ -81,6 +81,7 @@ export async function getStaticProps({ params: { slug, slugTitle } }) {
       content: mdxSource,
       chapters,
       slug,
+      slugTitle,
     },
   };
 }
@@ -169,10 +170,16 @@ const ContentIndex = ({ chapters, isChapterIndexVisible }) => {
   );
 };
 
-export default function PostPage({ frontmatter, content, chapters, slug }) {
+export default function PostPage({
+  frontmatter,
+  content,
+  chapters,
+  slug,
+  slugTitle,
+}) {
   const [isChapterIndexVisible, setIsChapterIndexVisible] = useState({});
 
-  let relativePath = `/books/${slug}`;
+  let relativePath = `/books/${slug}/${slugTitle}`;
 
   return (
     <div className="prose mx-auto book">

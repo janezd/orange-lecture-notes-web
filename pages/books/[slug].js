@@ -21,8 +21,6 @@ export async function getStaticPaths() {
     .filter((slug) => fs.existsSync(path.join(booksPath, slug, "index.md")))
     .map((slug) => ({ params: { slug } }));
 
-  console.log(fs.readdirSync("public/books/"));
-
   return {
     paths,
     fallback: false,

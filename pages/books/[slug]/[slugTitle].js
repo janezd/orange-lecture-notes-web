@@ -2,11 +2,11 @@ import fs from "fs";
 import path from "path";
 import React from "react";
 import matter from "gray-matter";
-import Image from "../../components/Image";
+import Image from "../../../components/Image";
 import { ImShrink2, ImEnlarge2 } from "react-icons/im";
 import Link from "next/link";
 import { useState } from "react";
-import { isAllowedPath, parseMd } from "../../utils/helpers";
+import { isAllowedPath, parseMd } from "../../../utils/helpers";
 import { serialize } from "next-mdx-remote/serialize";
 import { MDXRemote } from "next-mdx-remote";
 import remarkMath from "remark-math";
@@ -18,10 +18,16 @@ export async function getStaticPaths() {
   const paths = fs
     .readdirSync(booksPath)
     .filter(isAllowedPath)
-    .filter((slug) => fs.existsSync(path.join(booksPath, slug, "index.md")))
-    .map((slug) => ({ params: { slug } }));
-
-  console.log(fs.readdirSync("public/books/"));
+    .filter((slug) => !fs.existsSync(path.join(booksPath, slug, "index.md")))
+    .flatMap((slug) =>
+      fs
+        .readdirSync(path.join(booksPath, slug))
+        .filter(isAllowedPath)
+        .filter((slugTitle) =>
+          fs.existsSync(path.join(booksPath, slug, slugTitle, "index.md"))
+        )
+        .map((slugTitle) => ({ params: { slug, slugTitle } }))
+    );
 
   return {
     paths,
@@ -29,14 +35,20 @@ export async function getStaticPaths() {
   };
 }
 
-export async function getStaticProps({ params: { slug } }) {
-  const fileName = fs.readFileSync(`public/books/${slug}/index.md`, "utf-8");
+export async function getStaticProps({ params: { slug, slugTitle } }) {
+  const fileName = fs.readFileSync(
+    path.join("public", "books", slug, slugTitle, "index.md"),
+    "utf-8"
+  );
   const { data: frontmatter, content } = matter(fileName);
-  const mdxSource = await serialize(parseMd(content, `/books/${slug}`), {
-    mdxOptions: {
-      rehypePlugins: [rehypeKatex],
-    },
-  });
+  const mdxSource = await serialize(
+    parseMd(content, path.join("books", slug, slugTitle)),
+    {
+      mdxOptions: {
+        rehypePlugins: [rehypeKatex],
+      },
+    }
+  );
 
   const chapters = [];
 

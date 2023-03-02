@@ -1,15 +1,21 @@
-import fs from 'fs';
-import matter from 'gray-matter';
-import Link from 'next/link';
-import { isAllowedPath } from '../utils/helpers';
+import fs from "fs";
+import path from "path";
+import matter from "gray-matter";
+import Link from "next/link";
+import { isAllowedPath } from "../utils/helpers";
 
 export async function getStaticProps() {
-  const folders = fs.readdirSync('public/books');
+  const booksPath = path.join("public", "books" + path.sep);
 
-  const posts = folders
+  const posts = fs
+    .readdirSync(booksPath)
     .filter(isAllowedPath)
+    .filter((slug) => fs.existsSync(path.join(booksPath, slug, "index.md")))
     .map((slug) => {
-      const readFile = fs.readFileSync(`public/books/${slug}/index.md`, 'utf-8');
+      const readFile = fs.readFileSync(
+        `public/books/${slug}/index.md`,
+        "utf-8"
+      );
       const { data: frontmatter } = matter(readFile);
       return {
         slug,
@@ -27,11 +33,11 @@ export async function getStaticProps() {
 
 export default function Home({ posts }) {
   return (
-    <div className='home'>
+    <div className="home">
       <h1>Lecture notes</h1>
 
       {posts.map(({ slug, frontmatter }) => (
-        <div className='book' key={slug}>
+        <div className="book" key={slug}>
           <Link href={`/books/${slug}`}>
             <a>
               <h2>{frontmatter.title}</h2>

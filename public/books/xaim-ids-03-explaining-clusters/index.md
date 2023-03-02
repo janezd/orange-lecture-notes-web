@@ -1,6 +1,6 @@
 ---
 title: 'Introduction to Data Science. '
-subTitle: 'Lesson 1: Workflows and Exploratory Data Analysis'
+subTitle: 'Lesson 3: Explaining Clusters'
 coverImg: 'xaim-logo.png'
 date: '2022'
 public: false

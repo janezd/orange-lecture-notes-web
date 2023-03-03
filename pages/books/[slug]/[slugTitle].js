@@ -42,7 +42,7 @@ export async function getStaticProps({ params: { slug, slugTitle } }) {
   );
   const { data: frontmatter, content } = matter(fileName);
   const mdxSource = await serialize(
-    parseMd(content, path.join("books", slug, slugTitle)),
+    parseMd(content, path.join(path.sep, "books", slug, slugTitle)),
     {
       mdxOptions: {
         rehypePlugins: [rehypeKatex],

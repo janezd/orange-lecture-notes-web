@@ -1,12 +1,13 @@
 ---
 title: 'Introduction to Data Science'
-subTitle: 'Lesson 4: k-Means'
+subTitle: 'Lesson 5: Principal Component Analysis'
 coverImg: 'xaim-logo.png'
-date: '2022'
+date: '2023'
 public: false
 chapters:
-    - ds-unsupervised/080-kmeans
-    - ds-unsupervised/085-kmeans-zoo
+    - ds-unsupervised/100-pca
+    - ds-unsupervised/110-pca-details
+    - ds-unsupervised/120-explaining-pca
 ---
 
 These lecture notes are designed as accompanying material for the xAIM master's course. The course provides a gentle introduction to exploratory data analysis, machine learning, and visual data analytics. Students will learn how to accomplish various data mining tasks through visual programming, using [Orange](http://orangedatamining.com) as our tool of choice for this course.

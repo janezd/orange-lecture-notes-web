@@ -1,0 +1,10 @@
+{
+  "en": {
+    "book.chapter": "Chapter",
+    "book.chapters": "Chapters"
+  },
+  "sl": {
+    "book.chapter": "Poglavje",
+    "book.chapters": "Poglavja"
+  }
+}

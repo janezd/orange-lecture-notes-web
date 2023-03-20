@@ -4,18 +4,16 @@ Preview: [Orange Lecture Notes Site](https://books.biolab.si/)
 
 ## Getting Started
 
-Start by install Node.JS. On Mac, run:
-
-```
-brew install node
-npm install
-```
-
-First, run the development server:
+Start by installing Node.JS and yarn. On Mac, run:
 
 ```bash
-npm run dev
-# or
+brew install node
+npm install --global yarn
+```
+
+Then, run the development server from directory with books:
+
+```bash
 yarn dev
 ```
 

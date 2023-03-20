@@ -33,6 +33,10 @@ $max-size: 140;
   }
 }
 
+[data-retina] + p img {
+        zoom: 0.5;
+}
+
 [data-float-left] {
   + * img {
     float: left;

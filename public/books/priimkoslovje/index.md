@@ -8,6 +8,7 @@ language: 'sl'
 chapters:
     - pumice/priimkoslovje/01-zajci-in-medvedi
     - pumice/priimkoslovje/02-koprcani
+    - pumice/priimkoslovje/03-prleki-in-prekmurci
 ---
 
 Delo s podatki je privlačno in zabavno – če ga znamo narediti takšnega.

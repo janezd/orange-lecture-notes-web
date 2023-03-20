@@ -11,6 +11,7 @@ import { serialize } from "next-mdx-remote/serialize";
 import { MDXRemote } from "next-mdx-remote";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
+import { t } from "../../i18n";
 
 export async function getStaticPaths() {
   const booksPath = path.join("public", "books" + path.sep);
@@ -93,7 +94,13 @@ function useOnScreen(ref) {
   return isIntersecting;
 }
 
-const Chapter = ({ frontmatter, content, index, setIsChapterIndexVisible }) => {
+const Chapter = ({
+  frontmatter,
+  lang,
+  content,
+  index,
+  setIsChapterIndexVisible,
+}) => {
   const ref = React.useRef();
   const isVisible = useOnScreen(ref);
 
@@ -106,7 +113,7 @@ const Chapter = ({ frontmatter, content, index, setIsChapterIndexVisible }) => {
       <div className="right-column">
         <div className="prose mx-auto mt-8 chapter">
           <h2 className="chapter-title" id={getTitleId(frontmatter.title)}>
-            Chapter {index + 1}: {frontmatter.title}
+            {t("book.chapter", lang)} {index + 1}: {frontmatter.title}
           </h2>
           <MDXRemote {...content} />
         </div>
@@ -115,7 +122,7 @@ const Chapter = ({ frontmatter, content, index, setIsChapterIndexVisible }) => {
   );
 };
 
-const ContentIndex = ({ chapters, isChapterIndexVisible }) => {
+const ContentIndex = ({ chapters, isChapterIndexVisible, lang }) => {
   const [small, setSmall] = useState(false);
 
   const highestVisibleIndex = React.useMemo(() => {
@@ -138,7 +145,7 @@ const ContentIndex = ({ chapters, isChapterIndexVisible }) => {
         </button>
       </div>
 
-      <h2>Chapters</h2>
+      <h2>{t("book.chapters", lang)}</h2>
 
       <ul>
         {chapters.map(({ frontmatter }, index) => (
@@ -181,15 +188,17 @@ export default function PostPage({ frontmatter, content, chapters, slug }) {
 
       <ContentIndex
         chapters={chapters}
+        lang={frontmatter.language}
         isChapterIndexVisible={isChapterIndexVisible}
       />
 
-      {chapters.map(({ frontmatter, content }, index) => (
+      {chapters.map(({ frontmatter: chapterFrontmatter, content }, index) => (
         <Chapter
-          key={frontmatter.title}
-          frontmatter={frontmatter}
+          key={chapterFrontmatter.title}
+          frontmatter={chapterFrontmatter}
           content={content}
           index={index}
+          lang={frontmatter.language}
           setIsChapterIndexVisible={setIsChapterIndexVisible}
         />
       ))}

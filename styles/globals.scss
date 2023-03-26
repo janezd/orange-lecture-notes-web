@@ -29,7 +29,7 @@ $max-size: 140;
   + * img {
     width: calc(100% + $aside-width + $gap);
     max-width: calc(100% + $aside-width + $gap);
-    margin-left: -calc($aside-width + $gap) !important;
+    margin-left: (-$aside-width - $gap) !important;
   }
 }
 

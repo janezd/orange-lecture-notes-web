@@ -11,6 +11,8 @@ import { serialize } from "next-mdx-remote/serialize";
 import { MDXRemote } from "next-mdx-remote";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
+import slugify from 'slugify';
+import { getImageSize } from "../../../utils/getImageSize";
 
 export async function getStaticPaths() {
   const booksPath = path.join("public", "books" + path.sep);
@@ -45,7 +47,7 @@ export async function getStaticProps({ params: { slug, slugTitle } }) {
     parseMd(content, path.join(path.sep, "books", slug, slugTitle)),
     {
       mdxOptions: {
-        rehypePlugins: [rehypeKatex],
+        rehypePlugins: [rehypeKatex, getImageSize],
       },
     }
   );
@@ -65,7 +67,7 @@ export async function getStaticProps({ params: { slug, slugTitle } }) {
     const mdxSource = await serialize(parseMd(content, `/chapters/${slug}`), {
       mdxOptions: {
         remarkPlugins: [remarkMath],
-        rehypePlugins: [rehypeKatex],
+        rehypePlugins: [rehypeKatex, getImageSize],
       },
     });
 
@@ -85,10 +87,6 @@ export async function getStaticProps({ params: { slug, slugTitle } }) {
     },
   };
 }
-
-const getTitleId = (title) => {
-  return title.replace(/\s/g, "-").toLowerCase();
-};
 
 function useOnScreen(ref) {
   const [isIntersecting, setIntersecting] = useState(false);
@@ -120,7 +118,7 @@ const Chapter = ({ frontmatter, content, index, setIsChapterIndexVisible }) => {
     <div ref={ref} className="flex-container">
       <div className="right-column">
         <div className="prose mx-auto mt-8 chapter">
-          <h2 className="chapter-title" id={getTitleId(frontmatter.title)}>
+          <h2 className="chapter-title" id={slugify(frontmatter.title)}>
             Chapter {index + 1}: {frontmatter.title}
           </h2>
           <MDXRemote {...content} />
@@ -158,7 +156,7 @@ const ContentIndex = ({ chapters, isChapterIndexVisible }) => {
       <ul>
         {chapters.map(({ frontmatter }, index) => (
           <li key={index}>
-            <Link href={"#" + getTitleId(frontmatter.title)}>
+            <Link href={"#" + slugify(frontmatter.title)}>
               <a className={highestVisibleIndex === index ? "active" : ""}>
                 {frontmatter.title}
               </a>

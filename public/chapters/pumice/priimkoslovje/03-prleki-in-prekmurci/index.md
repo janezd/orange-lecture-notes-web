@@ -1,5 +1,5 @@
 ---
-title: 'Saj Prleki so Prekmurci, ne?'
+title: 'Saj Prleki so Prekmurci, a niso?'
 date: 'Marec 2023'
 comment: ''
 ---
@@ -19,7 +19,8 @@ Dendrogram kaže celotno hierarhijo, od posamičnih skupin do, na koncu, ene sam
 
 ![](prerezan-dendrogram.png)
 
-Če se vnaprej odločimo za neko število gruč ali pa bi radi eksperimentirali z različnim številom gruč, pa spreminjamo številko v nastavitvi Prvih N:.
+Črto lahko ročno premikamo, tako da jo vlečemo okrog. Primer je v posnetku. 
+Če se vnaprej odločimo za neko število gruč ali pa bi radi eksperimentirali z različnim številom gruč, pa lahko spreminjamo kar številko v nastavitvi Prvih N:.
 
 Pri taki uporabi hierarhično gručenje vedno posreduje vse podatke, doda pa jim stolpec Gruča, ki vsebuje zaporedno številko gruče.
 
@@ -39,7 +40,7 @@ Delotok je preprost.
 <!!! retina !!!>
 ![](delotok-resitev.png)
 
-Prve tri gradnike nastavimo tako kot pri prejšnjem vprašanju: v Zbirke podatkov naložimo Pogostosti priimkov po občinah, v Razdalje ne pozabimo izbrati kosinusne razdalje, v Gručenju pa Warda. V hierarhičnem gručenju nastavimo Prvih N: na 6 ter v Barvnem zemljevidu poiščemo svojo občino in poimenujemo regije, ki jih najdemo v tej barvi.
+Prve tri gradnike nastavimo tako kot pri prejšnjem vprašanju: v Zbirke podatkov naložimo Pogostosti priimkov po občinah, v Razdalje ne pozabimo izbrati kosinusne razdalje, v Gručenju pa Warda. V hierarhičnem gručenju povlečemo črto, ki predstavlja prag tako, da dobimo 6 gruč ali pa, še preprosteje, nastavimo Prvih N: na 6. Nato v Barvnem zemljevidu poiščemo svojo občino in poimenujemo regije, ki jih najdemo v tej barvi.
 
 <!!! float-aside !!!>
 Poleg Brd in Loške doline sta malo (vendar ne tako zelo) odrezana od svoje barve tudi Bohinj in Jesenice. Bogsigavedi, zakaj. Bohinj najbrž ni prav velik, Jesenice pa imajo zaradi železarske industrije morda sorazmerno malo avtohtonega prebivalstva. Tudi odgovor na vprašanje, zakaj je Piran rumen in ne oranžen, bi zahteval malo več raziskovanja.

@@ -50,7 +50,7 @@ Vrstice lahko izbiramo še z mnogimi drugimi gradniki, recimo s Tabelo. Za izbir
 
 #### Zemljevid
 
-Zemljevid pričakuje podatke, v katerih vsaka vrstica ustreza neki lokaciji. Če se stolpca z zemljepisno širino in višino imenujeta *širina* in *višina* (ali *latitude* in *longitude*, *lat* in *long* ali kaj podobnega), ju bo zaznal sam, sicer pa moramo v gradniku sami, ročno izbrati stolpca, ki vsebujeta koordinate.
+Zemljevid pričakuje podatke, v katerih vsaka vrstica ustreza neki lokaciji. Če se stolpca z zemljepisno širino in višino imenujeta *širina* in *dolžina* (ali *latitude* in *longitude*, *lat* in *long* ali kaj podobnega), ju bo zaznal sam, sicer pa moramo v gradniku sami, ročno izbrati stolpca, ki vsebujeta koordinate.
 
 <!!! float-aside retina !!!>
 Kje najdeš Hozjana? Kot se naučimo v posnetku, uporabimo Škatlo z brki, da izberemo Hozjane in jih pošljemo v Zemljevid. Točneje, v Prlekijo.
